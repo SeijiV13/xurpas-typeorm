@@ -1,0 +1,22 @@
+{
+   "type": "mongodb",
+   "url": "mongodb+srv://sa:sa@cluster0-sh0uf.mongodb.net/test?retryWrites=true&w=majority",
+   "database": "test",
+   "useUnifiedTopology": true,
+   "synchronize": true,
+   "logging": false,
+   "entities": [
+      "build/entity/**/*.js"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
